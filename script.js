@@ -2,30 +2,26 @@ const menuBtn = document.getElementById("menuBtn");
 const menu = document.getElementById("menu");
 
 menuBtn.addEventListener("click", () => {
-menu.classList.toggle("active");
+  menu.classList.toggle("active");
 });
 
-document.querySelectorAll("#menu a").forEach(link => {
-
-```
+document.querySelectorAll("#menu a").forEach((link) => {
+  ```
 link.addEventListener("click", () => {
     menu.classList.remove("active");
 });
-```
-
+```;
 });
 
 const ano = document.getElementById("ano");
 
-if (ano) {
-ano.textContent = new Date().getFullYear();
-}
+ano.textContent = `© ${new Date().getFullYear()} - Todos os direitos reservados.`;
+
 
 const contactForm = document.getElementById("contactForm");
 
 if (contactForm) {
-
-```
+  ```
 contactForm.addEventListener("submit", function(event) {
 
     event.preventDefault();
@@ -44,6 +40,5 @@ contactForm.addEventListener("submit", function(event) {
     contactForm.reset();
 
 });
-```
-
+```;
 }

@@ -1,4 +1,3 @@
-```html
 <!DOCTYPE html>
 <html lang="pt-BR">
 
@@ -8,8 +7,11 @@
     <meta name="description" content="Brito Advocacia - Robert Alexandre Brito">
     <title>Brito Advocacia | Robert Alexandre Brito</title>
 
-    <link rel="stylesheet" href="siteadv.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libertinus+Mono&family=Libre+Baskerville:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="siteadv.css">
 </head>
 
 <body>
@@ -23,17 +25,17 @@
         </a>
 
         <nav>
-            <button class="menu-btn" id="menuBtn" aria-label="Abrir menu">☰</button>
 
             <ul id="menu">
                 <li><a href="#inicio">Início</a></li>
                 <li><a href="#sobre">Sobre</a></li>
                 <li><a href="#areas">Áreas de Atuação</a></li>
                 <li><a href="#servicos">Serviços</a></li>
-                <li><a href="#contato">Contato</a></li>
-                <li><a href="solicitacao.html" target="_blank">Solicitar atendimento</a></li>
             </ul>
+
         </nav>
+
+        <a href="solicitacao.html" class="soliciatarContainer"><b>Solicitar atendimento</b></a>
 
     </div>
 </header>
@@ -46,14 +48,13 @@
 
                 <div class="hero-photo">
                     <div class="photo-frame">
-                        <img src="foto.jpg" alt="Robert Alexandre Brito">
+                        <img src="./assets/robert1.jpeg" alt="Robert Alexandre Brito">
                     </div>
                 </div>
 
                 <div class="hero-content">
                     <div class="eyebrow">Brito Advocacia</div>
                     <h1>Robert Alexandre Brito</h1>
-                    <p class="hero-subtitle">Advogado · OAB/PR 120395</p>
 
                     <a href="solicitacao.html" target="_blank" class="btn btn-primary hero-cta">
                         <i class="fa-solid fa-calendar-check" aria-hidden="true"></i>
@@ -68,24 +69,18 @@
     <section class="about" id="sobre">
         <div class="container">
 
-            <div class="section-title">
-                <div class="eyebrow">Sobre o Advogado</div>
+            <div class="section-title" id="sobre-sub">
                 <h2>Robert Alexandre Brito</h2>
-                <p>
-                    Uma trajetória construída a partir da união entre
-                    gestão, formação jurídica e exercício da advocacia.
-                </p>
+                <p class="eyebrow">Advogado · OAB/PR 120395</p>
             </div>
 
             <div class="about-grid">
 
                 <div class="about-photo">
-                    <img src="foto.jpg" alt="Robert Alexandre Brito">
+                    <img src="./assets/robert2.jpeg" alt="Robert Alexandre Brito">
                 </div>
 
                 <div class="about-text">
-
-                    <h3>Sobre o Advogado</h3>
 
                     <p>
                         Robert Alexandre Brito construiu sua trajetória
@@ -151,12 +146,6 @@
                         preparada.
                     </p>
 
-                    <div class="values">
-                        <div class="value">Ética</div>
-                        <div class="value">Responsabilidade</div>
-                        <div class="value">Conhecimento técnico</div>
-                        <div class="value">Atendimento individualizado</div>
-                    </div>
 
                 </div>
             </div>
@@ -176,7 +165,7 @@
 
             <div class="areas-grid">
 
-                <article class="area area-featured">
+                <article class="area">
                     <div class="area-icon">
                         <i class="fa-solid fa-scale-balanced"></i>
                     </div>
@@ -244,177 +233,59 @@
             </div>
         </div>
     </section>
+    
+    <footer class="footer">
+    <div class="container">
 
-    <section class="services" id="servicos">
-        <div class="container">
+        <div class="footer-content">
 
-            <div class="section-title">
-                <div class="eyebrow">Serviços</div>
-                <h2>Como podemos ajudar</h2>
+            <!-- Identidade -->
+            <div class="footer-brand">
+                <div class="footer-logo">
+                    <span class="logo-mark">⚖</span>
+                    <h3>Brito Advocacia</h3>
+                </div>
+
                 <p>
-                    Atendimento jurídico voltado à compreensão e análise
-                    de cada situação apresentada.
+                    Robert Alexandre Brito
+                    <br>
+                    Advogado — OAB/PR 120395
                 </p>
             </div>
 
-            <div class="areas-grid">
+            <!-- Navegação -->
+            <div class="footer-nav">
+                <h4>Navegação</h4>
 
-                <article class="area">
-                    <div class="area-icon">
-                        <i class="fa-solid fa-scale-balanced"></i>
-                    </div>
-
-                    <h3>Orientação jurídica</h3>
-
-                    <p>
-                        Esclarecimento de dúvidas e direcionamento jurídico
-                        para compreender seus direitos e as alternativas
-                        disponíveis para sua situação.
-                    </p>
-                </article>
-
-                <article class="area">
-                    <div class="area-icon">
-                        <i class="fa-solid fa-file-circle-check"></i>
-                    </div>
-
-                    <h3>Consultoria jurídica</h3>
-
-                    <p>
-                        Análise de questões e documentos jurídicos, com
-                        orientações técnicas para apoiar decisões mais
-                        conscientes e adequadas a cada caso.
-                    </p>
-                </article>
-
+                <a href="#inicio">Início</a>
+                <a href="#sobre">Sobre</a>
+                <a href="#areas">Áreas de Atuação</a>
+                <a href="#servicos">Serviços</a>
             </div>
 
-            <div class="section-title">
-                <a href="solicitacao.html" target="_blank" class="btn btn-primary">
-                    <i class="fa-solid fa-calendar-check"></i>
-                    Fazer uma solicitação
-                </a>
+            <!-- Contato -->
+            <div class="footer-contact">
+                <h4>Entre em contato</h4>
+                
+                <p class="contact-intro">
+                    Entre em contato com o Brito Advocacia para
+                    apresentar sua necessidade e solicitar atendimento.
+                </p>
+                <a href="solicitacao.html" class="soliciatarContainer"><b>Entre em contato</b></a>
             </div>
 
         </div>
-    </section>
 
-    <section class="contact" id="contato">
-        <div class="container">
+        <!-- Direitos autorais -->
+        <div class="footer-bottom">
+            <p>
+                © 2026 Brito Advocacia.
+                Todos os direitos reservados.
+            </p>
 
-            <div class="contact-grid">
-
-                <div>
-                    <div class="eyebrow">Fale conosco</div>
-                    <h2>Entre em contato</h2>
-
-                    <p class="contact-intro">
-                        Entre em contato com o Brito Advocacia para
-                        apresentar sua necessidade e solicitar atendimento.
-                    </p>
-
-                    <div class="contact-info">
-
-                        <div class="contact-item">
-                            <span class="contact-icon">
-                                <i class="fa-solid fa-location-dot"></i>
-                            </span>
-
-                            <div>
-                                <small>Endereço</small>
-                                Rua Chile — Jardim América<br>
-                                Foz do Iguaçu — PR<br>
-                                CEP 85864-140
-                            </div>
-                        </div>
-
-                        <div class="contact-item">
-                            <span class="contact-icon">
-                                <i class="fa-solid fa-envelope"></i>
-                            </span>
-
-                            <div>
-                                <small>E-mail</small>
-                                <a href="mailto:contato@robertbrito.adv.br">
-                                    contato@robertbrito.adv.br
-                                </a>
-                            </div>
-                        </div>
-
-                        <div class="contact-item">
-                            <span class="contact-icon">
-                                <i class="fa-brands fa-whatsapp"></i>
-                            </span>
-
-                            <div>
-                                <small>WhatsApp</small>
-                                <a
-                                    href="https://wa.me/5545991120603"
-                                    target="_blank"
-                                    rel="noopener noreferrer"
-                                >
-                                    (45) 99112-0603
-                                </a>
-                            </div>
-                        </div>
-
-                        <div class="contact-item">
-                            <span class="contact-icon">
-                                <i class="fa-solid fa-scale-balanced"></i>
-                            </span>
-
-                            <div>
-                                <small>OAB</small>
-                                OAB/PR 120395
-                            </div>
-                        </div>
-
-                    </div>
-
-                    <div class="socials">
-
-                        <a
-                            href="https://www.instagram.com/robertbrito.adv?stkn=M3dyMHlxYTVuZXZj&utm_source=qr"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            class="social-link"
-                            aria-label="Instagram"
-                        >
-                            <i class="fa-brands fa-instagram"></i>
-                            <span>Instagram</span>
-                        </a>
-
-                        <a
-                            href="https://www.facebook.com/share/1DXa9HG93C/?mibextid=wwXIfr"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            class="social-link"
-                            aria-label="Facebook"
-                        >
-                            <i class="fa-brands fa-facebook-f"></i>
-                            <span>Facebook</span>
-                        </a>
-
-                    </div>
-
-                    <a href="solicitacao.html" target="_blank" class="btn btn-primary">
-                        Solicitar atendimento
-                    </a>
-                </div>
-
-            </div>
+            <span>Robert Alexandre Brito — OAB/PR 120395</span>
         </div>
-    </section>
 
-</main>
-
-<footer>
-    <div class="container">
-        <strong>Brito Advocacia</strong>
-        <span>— Robert Alexandre Brito — OAB/PR 120395</span>
-        <br>
-        © <span id="ano"></span>
-        Todos os direitos reservados.
     </div>
 </footer>
 
