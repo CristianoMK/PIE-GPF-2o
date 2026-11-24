@@ -6,17 +6,12 @@ menuBtn.addEventListener("click", () => {
 });
 
 document.querySelectorAll("#menu a").forEach((link) => {
-  ```
+  `
 link.addEventListener("click", () => {
     menu.classList.remove("active");
 });
-```;
+`;
 });
-
-const ano = document.getElementById("ano");
-
-ano.textContent = `© ${new Date().getFullYear()} - Todos os direitos reservados.`;
-
 
 const contactForm = document.getElementById("contactForm");
 

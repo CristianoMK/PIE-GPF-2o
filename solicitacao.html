@@ -8,8 +8,12 @@
 
     <title>Solicitar Atendimento | Brito Advocacia</title>
 
-    <link rel="stylesheet" href="siteadv.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libertinus+Mono&family=Libre+Baskerville:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="solicitacao.css">
 </head>
 
 <body>
@@ -17,12 +21,12 @@
     <header>
         <div class="container nav">
 
-            <a href="siteadv.html" class="logo">
+            <a href="index.html" class="logo">
                 <span class="logo-mark">⚖</span>
                 <span>Brito Advocacia</span>
             </a>
 
-                <a href="siteadv.html">Voltar ao site</a>
+                <a href="index.html">Voltar ao site</a>
 
         </div>
     </header>
@@ -30,85 +34,27 @@
     <main>
 
         <section class="contact">
-            <div class="container">
+            <div class="container" >
+                <div class="fundo">
 
-                <div class="section-title">
-                    <div class="eyebrow">Brito Advocacia</div>
-                    <h2>Solicite um atendimento</h2>
-                    <p>
-                        Preencha os campos abaixo para apresentar sua situação.
-                        Sua solicitação será encaminhada pelo WhatsApp.
-                    </p>
-                </div>
-
-                <div class="contact-grid">
-
-                    <div>
-                        <h3>Estamos à disposição</h3>
-
-                        <p class="contact-intro">
-                            Informe seus dados e descreva brevemente como podemos
-                            ajudar. Após preencher o formulário, você poderá
-                            revisar a mensagem antes de enviá-la pelo WhatsApp.
+                    <div class="section-title" id="contactTittle">
+                        <div class="eyebrow">Brito Advocacia</div>
+                        <h2>Solicite um atendimento</h2>
+                        <p>
+                            Preencha os campos abaixo para apresentar sua situação.
+                            Sua solicitação será encaminhada para análise e entraremos em contato para agendar uma conversa.
                         </p>
-
-                        <div class="contact-info">
-
-                            <div class="contact-item">
-                                <span class="contact-icon">
-                                    <i class="fa-solid fa-envelope"></i>
-                                </span>
-
-                                <div>
-                                    <small>E-mail</small>
-                                    <a href="mailto:contato@robertbrito.adv.br">
-                                        contato@robertbrito.adv.br
-                                    </a>
-                                </div>
-                            </div>
-
-                            <div class="contact-item">
-                                <span class="contact-icon">
-                                    <i class="fa-brands fa-whatsapp"></i>
-                                </span>
-
-                                <div>
-                                    <small>WhatsApp</small>
-                                    <a href="https://wa.me/5545991120603" target="_blank" rel="noopener noreferrer">
-                                        (45) 99112-0603
-                                    </a>
-                                </div>
-                            </div>
-
-                        </div>
                     </div>
+                </div>  
+                <div class="atendimento-form">
 
                     <form class="form" id="contactForm">
-
+                        
                         <h3>Dados para atendimento</h3>
-
-                        <div class="form-row">
-
-                            <div class="field">
-                                <label for="nome">Nome</label>
-                                <input type="text" id="nome" name="nome" placeholder="Seu nome completo" required>
-                            </div>
-
-                            <div class="field">
-                                <label for="telefone">Telefone</label>
-                                <input type="tel" id="telefone" name="telefone" placeholder="(00) 00000-0000" required>
-                            </div>
-
-                        </div>
-
+                        
                         <div class="field">
-                            <label for="email">E-mail</label>
-                            <input type="email" id="email" name="email" placeholder="seu@email.com" required>
-                        </div>
-
-                        <div class="field">
-                            <label for="assunto">Área de interesse</label>
-
+                            <label for="assunto">Selecione a área</label>
+    
                             <select id="assunto" name="assunto" required>
                                 <option value="">Selecione uma opção</option>
                                 <option>Direito Civil</option>
@@ -119,6 +65,23 @@
                                 <option>Outro assunto</option>
                             </select>
                         </div>
+                        
+                        <div class="field">
+                            <label for="nome">Nome</label>
+                            <input type="text" id="nome" name="nome" placeholder="Seu nome completo" required>
+                        </div>
+
+                        <div class="field">
+                            <label for="telefone">Telefone</label>
+                            <input type="tel" id="telefone" name="telefone" placeholder="(00) 00000-0000" required>
+                        </div>
+
+
+                        <div class="field">
+                            <label for="email">E-mail</label>
+                            <input type="email" id="email" name="email" placeholder="seu@email.com" required>
+                        </div>
+
 
                         <div class="field">
                             <label for="mensagem">Mensagem</label>
@@ -127,34 +90,81 @@
                                 placeholder="Conte brevemente como podemos ajudar..." required></textarea>
                         </div>
 
-                        <button type="submit" class="btn btn-primary">
+                        <button type="submit" class="btn btn-primary" id="submitBtn">
                             Enviar solicitação
                         </button>
 
                         <p class="notice">
-                            Ao clicar, o WhatsApp será aberto com os dados
-                            preenchidos para que você revise e envie a mensagem.
+                            ao clicar em "Enviar solicitação", você concorda com o envio das informações fornecidas para análise e contato posterior.
                         </p>
 
-                        <a href="siteadv.html" class="btn btn-secondary">
-                            Voltar para a página inicial
-                        </a>
 
                     </form>
 
                 </div>
+
+                <a href="index.html" class="btn btn-secondary">
+                            Voltar para a página inicial
+                </a>
             </div>
         </section>
 
     </main>
 
-    <footer>
+    <footer class="footer">
         <div class="container">
-            <strong>Brito Advocacia</strong>
-            <span>— Robert Alexandre Brito — OAB/PR 120395</span>
-            <br>
-            © <span id="ano"></span>
-            Todos os direitos reservados.
+
+            <div class="footer-content">
+
+                <!-- Identidade -->
+                <div class="footer-brand">
+                    <div class="footer-logo">
+                        <span class="logo-mark">⚖</span>
+                        <h3>Brito Advocacia</h3>
+                    </div>
+
+                    <p>
+                        Robert Alexandre Brito
+                        <br>
+                        Advogado — OAB/PR 120395
+                    </p>
+                </div>
+
+                <!-- Navegação -->
+                <div class="footer-nav">
+                    <h4>Navegação</h4>
+
+                    <a href="index.html#inicio">Início</a>
+                    <a href="index.html#sobre">Sobre</a>
+                    <a href="index.html#areas">Áreas de Atuação</a>
+                    <a href="index.html#servicos">Serviços</a>
+                </div>
+
+                <!-- Contato -->
+                    <div class="footer-contact">
+                        <h4>Entre em contato</h4>
+
+                        <p class="contact-intro">
+                            Entre em contato com o Brito Advocacia para
+                            apresentar sua necessidade e solicitar atendimento.
+                        </p>
+                        <a href="solicitacao.html" class="soliciatarBtn"><b>Entre em contato</b></a>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- Direitos autorais -->
+            <div class="footer-bottom">
+                <p>
+                    © 2026 Brito Advocacia.
+                    Todos os direitos reservados.
+                </p>
+
+                <span>Robert Alexandre Brito — OAB/PR 120395</span>
+            </div>
+
         </div>
     </footer>
 
