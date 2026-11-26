@@ -6,11 +6,11 @@ menuBtn.addEventListener("click", () => {
 });
 
 document.querySelectorAll("#menu a").forEach((link) => {
-  `
+  ```
 link.addEventListener("click", () => {
     menu.classList.remove("active");
 });
-`;
+```;
 });
 
 const contactForm = document.getElementById("contactForm");
