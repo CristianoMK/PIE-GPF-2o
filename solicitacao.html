@@ -25,8 +25,11 @@
                 <span class="logo-mark">⚖</span>
                 <span>Brito Advocacia</span>
             </a>
+            <nav>
 
-                <a href="index.html">Voltar ao site</a>
+                <a href="index.html">
+                    <i class="fa-solid fa-house"></i> Voltar ao site
+                </a>
 
         </div>
     </header>
@@ -48,7 +51,7 @@
                 </div>  
                 <div class="atendimento-form">
 
-                    <form class="form" id="contactForm">
+                    <form class="form" id="contactForm" method="post" data-api-url="http://localhost:3000/api/contato">
                         
                         <h3>Dados para atendimento</h3>
                         
@@ -90,6 +93,9 @@
                                 placeholder="Conte brevemente como podemos ajudar..." required></textarea>
                         </div>
 
+                        <div class="cf-turnstile" data-sitekey="1x00000000000000000000AA" data-action="contato" data-size="flexible"></div>
+                        <p id="contactStatus" class="notice" role="status" aria-live="polite" hidden></p>
+
                         <button type="submit" class="btn btn-primary" id="submitBtn">
                             Enviar solicitação
                         </button>
@@ -104,7 +110,7 @@
                 </div>
 
                 <a href="index.html" class="btn btn-secondary">
-                            Voltar para a página inicial
+                            <i class="fa-solid fa-left-long"></i>Voltar para a página inicial
                 </a>
             </div>
         </section>
@@ -151,7 +157,7 @@
                         <a href="solicitacao.html" class="soliciatarBtn"><b>Entre em contato</b></a>
                     </div>
 
-                </div>
+                </div>  
 
             </div>
 
@@ -167,7 +173,8 @@
 
         </div>
     </footer>
-
+    <script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>
+    <script src="forms.js"></script>
     <script src="script.js"></script>
 
 </body>
